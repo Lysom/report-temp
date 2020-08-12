@@ -1,9 +1,11 @@
 <template>
-  <div class="title-wrap">
-    <img :src="titleInfo.imgURL" />
-    <h1>{{ titleInfo.title }}</h1>
-    <h2>{{ titleInfo.subTitle }}</h2>
-    <h2>{{ titleInfo.reportName }}</h2>
+  <div style="text-align: center;">
+    <div class="title-wrap">
+      <img :src="titleInfo.imgURL" />
+      <h1>{{ titleInfo.title }}</h1>
+      <h2>{{ titleInfo.subTitle }}</h2>
+      <h2>{{ titleInfo.reportName }}</h2>
+    </div>
   </div>
 </template>
 
@@ -29,10 +31,8 @@ export default {
 
 <style lang="scss" scoped>
 .title-wrap {
-  display: inline-block;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
   margin-top: 5mm;
   img {
     position: absolute;
